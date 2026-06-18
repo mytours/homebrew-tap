@@ -5,20 +5,20 @@
 class StqryCli < Formula
   desc "STQRY CLI - manage collections, screens, media, and content"
   homepage "https://github.com/mytours/stqry-cli"
-  version "0.10.51"
+  version "0.10.52"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mytours/stqry-cli/releases/download/v0.10.51/stqry-cli_darwin_amd64.tar.gz"
-      sha256 "3b9215da484efe24045928a29429247f02ab07cef0c0342d3c8981189c658b94"
+      url "https://github.com/mytours/stqry-cli/releases/download/v0.10.52/stqry-cli_darwin_amd64.tar.gz"
+      sha256 "deef009580f0184664af48760b52f1cd386120321c22deef1d6ce981dc1b1e6c"
 
       define_method(:install) do
         bin.install "stqry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mytours/stqry-cli/releases/download/v0.10.51/stqry-cli_darwin_arm64.tar.gz"
-      sha256 "a0f50bc2caaaf7aef47bc3e47fbfee3576306195ae68c2e3ab142c0b6c1f9626"
+      url "https://github.com/mytours/stqry-cli/releases/download/v0.10.52/stqry-cli_darwin_arm64.tar.gz"
+      sha256 "99a5e70098852e280a88086ab9bfd0389a4296641d3531277ff88f78e55c2405"
 
       define_method(:install) do
         bin.install "stqry"
@@ -28,15 +28,15 @@ class StqryCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mytours/stqry-cli/releases/download/v0.10.51/stqry-cli_linux_amd64.tar.gz"
-      sha256 "999707a1c7ee6d3bc7bed6219267dc6298779b549c0888be0c7b1df7cf4abe23"
+      url "https://github.com/mytours/stqry-cli/releases/download/v0.10.52/stqry-cli_linux_amd64.tar.gz"
+      sha256 "ebfbfcbe9873f502c6ada437ca22f575f1f8e900cab00dd00b5fe677e60c728d"
       define_method(:install) do
         bin.install "stqry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mytours/stqry-cli/releases/download/v0.10.51/stqry-cli_linux_arm64.tar.gz"
-      sha256 "0799c47e36027429557fad0711997bb2fa955ac2f9a76ad6fe3c4965f535e1d8"
+      url "https://github.com/mytours/stqry-cli/releases/download/v0.10.52/stqry-cli_linux_arm64.tar.gz"
+      sha256 "d39dc5eda7730060ec501db4db42b9254aa91024c9c99749a4ecfd2d621269a8"
       define_method(:install) do
         bin.install "stqry"
       end
